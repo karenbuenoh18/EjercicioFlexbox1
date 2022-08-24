@@ -1,0 +1,40 @@
+*{margin: auto; padding: 0;}
+        /*cuerpo*/
+        body { background-color: rgb(238, 183, 192);} 
+        /*Este es para poner el fondo de color usando el comando body para que lo use en todo*/
+        body { background-image:url(https://www.todofondos.net/wp-content/uploads/fondos-de-colores-minimalistas-top-gratis-de-colores-minimalistas.-fondo-de-pantalla-hd-1080p-de-colores.png) ;}
+        /*Este es para poner una imagen de fondo*/
+        /*Menú*/
+        nav {background-color:rgb(193, 129, 223);} 
+        /*Este es para poner el color en la cinta de opciones utilizando el comando que usamos para crearlo, En este caso "nav"*/
+        a{color: black; text-decoration: none; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size: 20px; padding-top: 10px;}
+        nav a:link, a:visited{color:aquamarine;}    
+        nav a:hover, a:active{color: lightcoral;} 
+        /*para marcar el botton que fue visitado, se utiliza visited, todas estas son pseudoclases*/
+        /*Este hover es para poner color cuando el mouse pase por el menú*/
+        /*agrupación de selectores*/
+        /*podemos hacer todo en una sola línea, por ejemplo*/
+        /*nav a {background-color:rgb(193, 129, 223); color: black; text-decoration: none; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size: 20px; padding-top: 10px;}*/
+        /*Esto no se suele hacer a menos que nos convenga, pero le da un estilo raro al menú*/
+
+        /*section*/
+        section{width: 75%; background-color: antiquewhite; float: left;}
+        section h1{text-align:center ; padding: 0.5em; color:blueviolet; font-size: 45px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }  
+        /*padding es para separar lo que estamos moviendo del borde*/
+        section h2 {text-align:center ; padding: 0.5em; color:#d05127; }
+        section h3 {text-align:center ; padding: 0.5em; color:hsl(92, 67%, 41%);}
+
+        /*article*/
+        article{margin: 0.53m 3em; padding:  0.5em 0.2em; background-color: white; border: 5px double pink;}
+
+        /*aside*/
+        aside {width: 25%; float: left;}
+
+        .listas{ background-color: blueviolet; float: left; padding-left: 35px; width: auto;}
+        /*para llamar un selector con class usaremos un punto*/
+        /*class es para cambiar un grupo*/
+        #cosito{color: darkgoldenrod;}
+        /*este id es para cambiar un solo elemento (elemento único)*/
+        /*para llamar un selector con ID usaremos un símbolo de gato#*/
+        footer{background-color: wheat; clear: both;}
+        em{text-align: center;}

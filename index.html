@@ -1,0 +1,182 @@
+<!DOCTYPE html> <!--Tipo de documento-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <title>Introducción a HTML</title>
+    <style>
+        *{margin: auto; padding: 0;}
+        /*cuerpo*/
+        body { background-color: rgb(238, 183, 192);} 
+        /*Este es para poner el fondo de color usando el comando body para que lo use en todo*/
+        body { background-image:url(https://www.todofondos.net/wp-content/uploads/fondos-de-colores-minimalistas-top-gratis-de-colores-minimalistas.-fondo-de-pantalla-hd-1080p-de-colores.png) ;}
+        /*Este es para poner una imagen de fondo*/
+        /*Menú*/
+        nav {background-color:rgb(193, 129, 223);} 
+        /*Este es para poner el color en la cinta de opciones utilizando el comando que usamos para crearlo, En este caso "nav"*/
+        a{color: black; text-decoration: none; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size: 20px; padding-top: 10px;}
+        nav a:link, a:visited{color:aquamarine;}    
+        nav a:hover, a:active{color: lightcoral;} 
+        /*para marcar el botton que fue visitado, se utiliza visited, todas estas son pseudoclases*/
+        /*Este hover es para poner color cuando el mouse pase por el menú*/
+        /*agrupación de selectores*/
+        /*podemos hacer todo en una sola línea, por ejemplo*/
+        /*nav a {background-color:rgb(193, 129, 223); color: black; text-decoration: none; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-size: 20px; padding-top: 10px;}*/
+        /*Esto no se suele hacer a menos que nos convenga, pero le da un estilo raro al menú*/
+
+        /*section*/
+        section{width: 75%; background-color: antiquewhite; float: left;}
+        section h1{text-align:center ; padding: 0.5em; color:blueviolet; font-size: 45px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }  
+        /*padding es para separar lo que estamos moviendo del borde*/
+        section h2 {text-align:center ; padding: 0.5em; color:#d05127; }
+        section h3 {text-align:center ; padding: 0.5em; color:hsl(92, 67%, 41%);}
+
+        /*article*/
+        article{margin: 0.53m 3em; padding:  0.5em 0.2em; background-color: white; border: 5px double pink;}
+
+        /*aside*/
+        aside {width: 25%; float: left;}
+
+        .listas{ background-color: blueviolet; float: left; padding-left: 35px; width: auto;}
+        /*para llamar un selector con class usaremos un punto*/
+        /*class es para cambiar un grupo*/
+        #cosito{color: darkgoldenrod;}
+        /*este id es para cambiar un solo elemento (elemento único)*/
+        /*para llamar un selector con ID usaremos un símbolo de gato#*/
+        footer{background-color: wheat; clear:both;}
+        em{text-align: center;}
+
+
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de nosotros</a>
+            <a href="#">Productos</a>
+            <a href="./contáctanos.html">Contáctanos</a> <!--Así se escribe cuando linkeamos otra página-->
+        </nav>    
+    </header>
+    <section>
+        <h1>Título</h1>
+        <h2>Subtítulo</h2>
+        <h3>Artículo primero</h3>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.6eJ0XgB_o4_xw55Q9O9UlgHaEG&pid=Api" alt="" width="">
+        <img src="http://www.astangayurveda.com/wp-content/uploads/2015/08/nature.png" alt="600" width="300" height="300">
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium adipisci officiis libero fuga at minima blanditiis reiciendis nesciunt! Voluptate at in nobis nostrum reprehenderit? Doloribus ullam sed placeat incidunt deleniti.</p>
+            </article>
+        <h3 style="color: green; font-size: 20px">Artículo segundo</h3>   <!--Este color y green se hace aquí en vez de arriba en style porque ya hay un nombre usado en esa parte, entonce podemos hacerlo "línea"-->
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, laborum culpa? Fuga iusto quod autem quo nam beatae, recusandae consequuntur, voluptas voluptatem accusamus, tempore quibusdam esse eum nihil mollitia id</p>
+            </article>
+        <h3>Artículo tercero</h3>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam non natus nemo ipsa illo dolore adipisci ullam voluptatum obcaecati, qui amet, culpa corporis iste temporibus dolores? Veritatis, iste reiciendis.</p>
+            </article>
+        <h4>Hola</h4>
+        <h5>Hola</h5>
+        <h6>Hola</h6>
+
+    </section>
+    <br>
+    <br>
+    <aside>
+        <div class="listas">
+            <ol>
+                <li>Juan Manuel</li>
+                <li>Mafer</li>
+                <li>Alam</li>
+                <li>JC</li>
+                <li>Steven</li>
+            </ol>
+    <br>
+    <br>
+            <ul>
+                <li>Gustavo</li>
+                <li>Irving</li>
+                <li>Mel</li>
+                <li>Martín</li>
+                <li>Alexander</li>
+            </ul>    
+
+        </div>
+        <div id="cosito">
+            <h1> Lorem, ipsum dolor.</h1>
+            <h2>Lorem, ipsum. </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptates praesentium deleniti at, amet asperiores iure, consequuntur distinctio qui vero suscipit! Nobis illo pariatur culpa excepturi consectetur maiores, placeat recusandae!</p>
+        </div>
+        <img src="https://pbs.twimg.com/media/FXkEiycUYAEmgDa.jpg" alt="" width="330px">
+        <img src="https://pbs.twimg.com/media/FTxtsr2VIAEdafw.jpg" alt="" width="330px">
+
+    </aside>
+        
+    <hr>
+        <table border="2">
+            <th>Tablas</th>                
+            <tr>
+                <td>Nohemí</td>
+                <td>Eduardo</td>
+                <td>Mario</td>
+            </tr>
+        </table>
+    <hr>
+    <h1>Formulario</h1>    
+    <form>
+        <h3>Datos personales</h3>
+        <label for="Nombre">Nombre completo:</label>
+        <input type="text">
+    <br>
+        <label for="email">Ingrese su correo</label>    
+        <input type="text">
+    <br>
+        <label for="password">Ingrese su contraseña</label>
+        <input type="password">
+    <br>
+    <hr>
+        <h3>Último grado de estudios</h3>    
+        <label for="">
+            <input type="checkbox" name="" id=""> Secundaria
+        </label>
+        <label for="">
+            <input type="checkbox" name="" id=""> Preparatoria
+        </label>
+        <label for="">
+            <input type="checkbox" name="" id=""> Universidad
+        </label>
+    <hr>
+        <h3>Documentos</h3>    
+        <label for="">INE
+            <input type="file">
+        </label>
+    <br>
+        <label for="">Recibo de pago:
+            <input type="file"> <!--El input no encierra nada, por eso no tiene una etiqueta de cierre /, así como el hr-->
+        </label>
+        <label for="">Comprobante de domicilio:
+            <input type="file">
+        </label>
+    <hr>
+        <h3>Selecciona tu principal interés</h3>    
+        <select name="" id=""> <!--Select es para abrir sección de selección, para encerrar algo, por eso necesita la etiqueta de cierre /-->
+            <option value="">HTML</option>  <!--Es para hacer una lista de selección-->
+            <option value="">CSS</option>
+            <option value="">JAVA</option>
+        </select>
+        <input type ="submit" value="Enviar formulario">
+    <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea> <!--el textarea es para que salga el cuadro de texto-->
+    <!--Cols son las columnas y los rows son las ileras-->
+    </form>
+</body>
+    <footer>
+        <em>Derechos reservados &#169 Generation 2022 </em>
+        <a href="https://www.facebook.com/lakarenbueno/">Síguenos en nuestras redes</a>
+    </footer>
+</html>
